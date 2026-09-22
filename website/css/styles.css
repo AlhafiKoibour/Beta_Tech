@@ -1,0 +1,386 @@
+:root{
+  --primary: #001C44;
+  --accent: #0088FF;
+  --bg: #F8F9FA;
+}
+
+body{
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+  color: #111827;
+}
+
+/* Navbar */
+#mainNav{
+  /* Solid navbar matching the Béta Tech logo color */
+  background-color: #0d223a; /* exact logo shade */
+  color: #fff;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,0.08);
+}
+
+/* If you prefer a solid navbar instead, add class `navbar-solid` to the <nav> and
+   the following rule will apply (Option A). */
+.navbar-solid{
+  background: var(--primary) !important;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,0.12) !important;
+}
+
+/* Pre-inscription button styles - two options. Add class `option-a` or `option-b` to choose. */
+.btn-preinscription{
+  font-weight:700;padding:.45rem 1rem;border-radius:999px;border:2px solid transparent;display:inline-flex;align-items:center;gap:.5rem
+}
+.btn-preinscription.option-a{ /* Option A: outline white (changed to match 'Découvrir les programmes') */
+  background-color: transparent; /* remove solid blue */
+  color: #FFFFFF; /* keep text white */
+  border: 2px solid #FFFFFF; /* white outline */
+  border-radius: 50px; /* pill shape */
+  padding: 10px 30px; /* vertical 10px, horizontal 30px */
+}
+.btn-preinscription.option-a:hover{background-color: rgba(255,255,255,0.06); color:#FFFFFF;}
+
+/* Ensure nav-cta utility doesn't force a solid background for pre-inscription */
+.btn-preinscription.option-a.nav-cta{ background-color: transparent; color:#FFFFFF; border:2px solid #FFFFFF }
+.btn-preinscription.option-b{ /* Option B: white button */
+  background-color:#FFFFFF;color:#0d223a;border-color:rgba(13,34,58,0.08);
+}
+.btn-preinscription.option-b:hover{background-color:#e6f4ff;color:#0d223a}
+
+/* Ensure the existing nav-cta doesn't visually conflict when btn-preinscription is used */
+.nav-cta{background:transparent;border:none;color:inherit;padding:0}
+#mainNav .nav-link{ color: rgba(255,255,255,0.9); transition: color .15s, transform .15s; }
+#mainNav .nav-link:hover{ color: #fff; transform: translateY(-2px); }
+#mainNav .navbar-brand .logo{ width:36px; height:36px; object-fit:cover; border-radius:6px; }
+#mainNav .brand-text{ font-weight:700; color:#fff; }
+.nav-cta{ background: var(--primary); border-color: var(--primary); color:#fff; }
+.nav-cta:hover{ transform:scale(1.03); box-shadow:0 6px 18px rgba(0,28,68,0.18); }
+
+/* WhatsApp button preserved */
+.whatsapp-btn{position:fixed;right:20px;bottom:20px;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;border:none;box-shadow:0 6px 18px rgba(37,211,102,0.25)}
+.whatsapp-btn{width:64px;height:64px;border-radius:50%;background:linear-gradient(180deg,#25D366,#12b64a);box-shadow:0 10px 30px rgba(2,72,40,0.18);display:flex;align-items:center;justify-content:center;padding:0;border:none}
+.whatsapp-btn svg{display:block}
+.whatsapp-btn:focus{outline:none;box-shadow:0 10px 40px rgba(2,72,40,0.28)}
+
+/* Hero - background image, overlay and centered content */
+/* Container principal */
+.hero-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 0;
+  position: relative;
+  color: #fff;
+  overflow: hidden; /* Empêche tout débordement */
+}
+
+/* Calque d'arrière-plan animé avec images en fondu */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* Animation de 15 secondes qui tourne en boucle */
+  animation: heroBgSlide 15s infinite ease-in-out;
+}
+
+/* Superposition sombre constante pour maintenir la lisibilité du texte */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 28, 68, 0.45), rgba(0, 28, 68, 0.55));
+  pointer-events: none;
+}
+
+/* Le contenu reste au-dessus de l'arrière-plan */
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Keyframes pour faire défiler/changer les images en fondu */
+@keyframes heroBgSlide {
+  0%, 30% {
+    background-image: url('../assets/optimized/image21.webp');
+  }
+  33%, 63% {
+    background-image: url('../assets/optimized/image20.webp'); /* Remplacez par le chemin de votre 2ème image */
+  }
+  66%, 96% {
+    background-image: url('../assets/optimized/image25.webp'); /* Remplacez par le chemin de votre 3ème image */
+  }
+  100% {
+    background-image: url('../assets/optimized/image4.webp');
+  }
+}
+.hero-section .container{position:relative;z-index:2}
+/* keep a subtle extra layer if needed (already handled above) */
+.hero-section::after{content:'';position:absolute;inset:0;pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,255,255,0.9);color:var(--primary);padding:.45rem .8rem;border-radius:999px;font-weight:600}
+.hero-title{font-size:2.6rem;font-weight:800;color:#FFFFFF;margin-top:.6rem;margin-bottom:.8rem;line-height:1.05;text-shadow:0 2px 4px rgba(0,0,0,0.5)}
+.hero-lead{color:rgba(255,255,255,0.92);font-size:1.05rem;margin-bottom:1rem;text-shadow:0 1px 3px rgba(0,0,0,0.45)}
+.hero-features li{margin-bottom:.5rem;color:rgba(255,255,255,0.92);font-weight:500}
+.hero-features i.text-accent{color:var(--accent)}
+/* Primary CTA: white background with navy text */
+.hero-cta{background:#FFFFFF;border-color:#FFFFFF;color:var(--primary);box-shadow:0 12px 30px rgba(0,28,68,0.16)}
+.hero-cta:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,28,68,0.18)}
+/* Secondary CTA: outline light */
+.btn-outline-primary{border-color:rgba(255,255,255,0.85);color:#fff}
+.btn-outline-primary:hover{background:rgba(255,255,255,0.06)}
+
+.hero-trust .avatar{ width:38px; height:38px; border-radius:50%; object-fit:cover; border:2px solid #fff; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-left:-12px; }
+.hero-trust .avatars{ display:flex; align-items:center; }
+
+.hero-visual{ max-width:520px; }
+.hero-image{ border-radius:16px; }
+.badge-floating{ right:-18px; bottom:-18px; width:170px; padding:.6rem .8rem; }
+.badge-floating .badge-content{ text-align:left; }
+
+/* Cards and gallery hover */
+.card img{ object-fit:cover; height:220px; }
+#gallery .card img{ transition: transform .3s; }
+#gallery .card:hover img{ transform: scale(1.03); }
+
+/* Responsive tweaks */
+@media (min-width:992px){ .hero-title{ font-size:2.6rem; } }
+@media (max-width:767px){ .hero-section{ padding:3rem 0; min-height:60vh } .hero-title{ font-size:1.6rem } .hero-lead{ font-size:0.98rem } }
+
+/* About section redesign */
+.about-section{background:#fff}
+/* About as full-width background hero */
+.about-hero{
+  background-image: linear-gradient(180deg, rgba(0,28,68,0.85), rgba(0,28,68,0.90)), url('../assets/optimized/image2.webp');
+  background-size:cover;background-position:center center;background-repeat:no-repeat;
+  padding:80px 0;min-height:420px;position:relative;color:#fff;overflow:hidden
+}
+.about-hero .container{position:relative;z-index:2}
+.about-top-badge .badge{background:var(--accent);color:#00122a}
+.about-badge{display:inline-flex;align-items:center;gap:.6rem;background:linear-gradient(90deg,#e6f4ff,#f8fbff);color:var(--primary);padding:.45rem .8rem;border-radius:999px;font-weight:600}
+.about-hero .about-badge{background: rgba(255,255,255,0.08); color: #FFFFFF}
+.about-title{color:var(--primary);font-weight:700;font-size:2rem;margin-bottom:1rem}
+.about-hero .about-title{color:#FFFFFF}
+.about-lead{color:#334155;font-size:1.05rem;margin-bottom:1.25rem}
+.values-grid .value-card{border:1px solid rgba(13,34,58,0.04);background:#fff}
+.value-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,136,255,0.06)}
+.glass{background: rgba(255,255,255,0.08);backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);border:1px solid rgba(255,255,255,0.12)}
+.glass h6{color:#FFFFFF}
+.glass p{color:#E0E0E0}
+.about-stats .stat{padding:1rem}
+.stat-number{color:var(--primary);font-weight:800}
+
+.about-photo-deco{position:absolute;right:2.5rem;top:-1.5rem;width:220px;height:220px;background:linear-gradient(135deg, rgba(0,136,255,0.08), rgba(0,28,68,0.04));border-radius:20px;transform:rotate(8deg);z-index:0}
+.about-photo-card{position:relative;z-index:2;border-radius:16px}
+.floating-photo-badge{min-width:220px}
+
+/* Small helpers */
+.about-section .about-badge{font-size:.9rem}
+.about-section .value-card .fs-3{line-height:1}
+.about-section .value-card h6{color:var(--primary)}
+.about-section .stat-number{font-size:1.5rem}
+
+@media(max-width:767px){ .about-photo-deco{display:none}.about-title{font-size:1.5rem} }
+
+/* Partners infinite logo slider */
+.partners-section{padding:2rem 0}
+.partners-section .text-accent-or{color:#E08821}
+.partners-ribbon{background:#F8F9FA;border-radius:12px;padding:18px 10px;overflow:hidden}
+.partners-track{display:flex;align-items:center;gap:3rem;white-space:nowrap;animation:slideLeft 20s linear infinite}
+.partners-slide{display:flex;align-items:center;gap:3rem}
+.partner-item{display:flex;align-items:center;justify-content:center}
+.partner-item img{max-height:50px;opacity:0.7;transition:transform .25s ease,opacity .25s ease;display:block}
+.partner-item:hover img{opacity:1;transform:scale(1.05)}
+
+/* Pause animation when hovering the ribbon (or logos inside it) */
+.partners-ribbon:hover .partners-track{animation-play-state:paused}
+
+@keyframes slideLeft{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+
+@media(max-width:767px){
+  .partners-track{gap:1.5rem}
+  .partners-ribbon{padding:12px}
+  .partner-item img{max-height:40px}
+}
+
+/* Formations & Services carousel styles */
+.formations-section{background:#F8F9FA;border-radius:12px}
+.formation-card{background:#FFFFFF;border-radius:16px;border:1px solid rgba(0,0,0,0.04);min-height:220px}
+.formation-card{border-radius:16px;min-height:320px;position:relative;overflow:hidden;border:1px solid rgba(0,0,0,0.06);background-size:cover;background-position:center center}
+.formation-card .formation-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.52));mix-blend-mode:multiply}
+.formation-card .formation-overlay{position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));mix-blend-mode:multiply;pointer-events:none;z-index:1}
+/* Card content anchored to bottom using Flexbox */
+.formation-card .formation-content{position:absolute;left:20px;right:20px;bottom:20px;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:20px}
+.formation-card .formation-content .text-block{padding-right:12px}
+.formation-card .formation-content h5{margin-bottom:6px;font-size:1.25rem}
+.formation-card .formation-content p{margin-bottom:12px;margin-top:0}
+.text-white-90{color:rgba(255,255,255,0.92)}
+.formation-card h5{color:#FFFFFF}
+.formation-card p{color:rgba(255,255,255,0.9)}
+.btn-voir{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:.9rem 1.25rem;font-weight:700;width:80%;max-width:320px;box-shadow:0 12px 30px rgba(0,136,255,0.12);margin:0 auto 8px auto;display:block}
+.btn-voir:hover{transform:translateY(-2px);box-shadow:0 18px 36px rgba(0,136,255,0.14)}
+.swiper .btn-circle{width:44px;height:44px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,0.08);background:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+.swiper .swiper-button-next:after, .swiper .swiper-button-prev:after{font-size:14px;color:#001C44}
+.link-see-all{font-weight:600}
+
+/* Ensure navigation buttons are above slides and overlay */
+.swiper-button-next, .swiper-button-prev{z-index:5}
+.swiper{cursor:grab}
+.swiper:active{cursor:grabbing}
+
+@media (max-width:575px){
+  .formation-card{min-height:200px}
+  .formation-card .icon-pill{width:48px;height:48px}
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.about-section .card {
+  transition: transform 0.3s ease, shadow 0.3s ease;
+}
+
+.about-section .card:hover {
+  transform: translateY(-8px);
+}
+
+/* Animation de défilement vers la gauche */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonial-ticker {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 25s linear infinite; /* Réglez 25s pour accélérer ou ralentir */
+}
+
+/* Met le défilement en pause lorsque l'utilisateur survole les cartes */
+.testimonial-ticker:hover .testimonial-track {
+  animation-play-state: paused;
+}
+
+.testimonial-card {
+  width: 300px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  white-space: normal; /* Permet au texte de revenir à la ligne */
+}
+
+/* Responsive: stack testimonials vertically on small screens */
+@media (max-width: 767px) {
+  .testimonial-track { display: block; width: 100%; animation: none; }
+  .testimonial-card { width: 100%; margin: 0 0 1rem 0; }
+  .testimonial-ticker { padding: 0 0.5rem; }
+}
+
+.services-section .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-section .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Footer styles */
+.site-footer{background: linear-gradient(180deg,#fbf7f4 0%, #f6f0ed 100%); color:#0f1724}
+.site-footer .footer-title{color:var(--primary);font-weight:700;margin-bottom:.75rem}
+.site-footer .footer-links a{color:#475569;text-decoration:none;display:block;padding:.25rem 0;transition:color .15s}
+.site-footer .footer-links a:hover{color:var(--accent)}
+.site-footer .contact-list li{color:#475569}
+.site-footer .social-btn{width:44px;height:44px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#fff;border:1px solid rgba(0,0,0,0.04);color:#00122a;text-decoration:none}
+.site-footer .social-btn i{font-size:18px}
+
+@media (max-width:767px){
+  .site-footer .social-btn{width:40px;height:40px}
+}
+
+/* Dark footer bar */
+.footer-bar{background:#111318}
+.footer-bar .footer-bar-link{color:rgba(255,255,255,0.85);text-decoration:underline}
+.footer-bar .footer-bar-link:hover{color:#fff}
+.footer-bar .text-white{color:#fff}
+
+/* Send button (Pré-inscription / Contact) - use Béta Tech primary color */
+.btn.send, .send.btn{
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 8px 20px rgba(0,28,68,0.12);
+}
+.btn.send:hover, .send.btn:hover{
+  background-color:#001632 !important;
+  border-color:#001632 !important;
+}
+.btn.send:focus, .send.btn:focus{
+  box-shadow: 0 0 0 0.25rem rgba(0,28,68,0.18);
+  outline: none;
+}
+
+/* Zone image de la carte */
+.style-card-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Badge icône au centre */
+.icon-badge {
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #001C44;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+/* Bouton style "En savoir plus ->" */
+.btn-light-custom {
+  background-color: #EEF2F6;
+  color: #001C44;
+  font-size: 0.9rem;
+  padding: 8px 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-light-custom:hover {
+  background-color: #0088FF;
+  color: #ffffff;
+}
+
+/* Effet survol carte */
+.card-service-custom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-service-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}

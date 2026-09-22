@@ -1,0 +1,22 @@
+:root{--primary:#001C44;--accent:#0088FF;--bg:#F8F9FA}
+*{box-sizing:border-box}
+body{font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:#0f172a}
+.navbar-dark.bg-primary{background:var(--primary)!important}
+.lead-hero{padding-top:4rem;padding-bottom:4rem;background:linear-gradient(180deg,rgba(0,28,68,0.02),transparent)}
+.badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(0,136,255,0.08);color:var(--primary);padding:.4rem .75rem;border-radius:999px}
+.hero-h1{font-weight:800;color:var(--primary);line-height:1.05}
+.animated-underline{background:linear-gradient(90deg,var(--accent),transparent);padding:.1rem .2rem;border-radius:4px}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-accent:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,136,255,0.12)}
+.hero-img{max-width:520px;border-radius:16px}
+.floating-card{position:absolute;right:-16px;bottom:-16px;background:#fff;padding:.6rem .8rem;border-radius:10px}
+.pole{transition:transform .24s,box-shadow .24s}
+.pole:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(0,136,255,0.12)}
+.text-accent{color:var(--accent)}
+.quiz-option.active{background:var(--primary);color:#fff}
+.filter-btn.active{background:var(--primary);color:#fff}
+.counter{font-weight:800;color:var(--primary)}
+/* FAQ */
+#faqSearch{max-width:560px}
+/* responsive */
+@media(max-width:768px){.hero-h1{font-size:1.45rem}}

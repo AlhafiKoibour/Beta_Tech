@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Béta Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <!-- Swiper removed: formations use static Bootstrap grid -->
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="assets/optimized/logo.jpg" alt="Béta Tech" class="logo me-2">
+      <span class="brand-text">Béta Tech</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formations">Formations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-3"><a class="btn btn-preinscription option-a rounded-pill nav-cta" href="https://forms.gle/3fjyqTKzn7eSgpR27">Pré-inscription</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-section py-5">
+  <div class="container">
+  <div class="row align-items-center justify-content-center min-vh-100">
+    <div class="col-12 col-lg-8 text-center mx-auto">
+      
+      <!-- Badge -->
+      <div class="hero-badge mb-3">
+        <span>Le centre de référence pour vos compétences de demain</span>
+      </div>
+      
+      <!-- Titre et Paragraphe -->
+      <h1 class="hero-title text-white">Boostez votre carrière avec des compétences pratiques en Informatique &amp; Langue</h1>
+      <p class="hero-lead text-white-50 mx-auto" style="max-width: 650px;">
+        Formations intensives et certifiantes en Bureautique, Maintenance informatique, Infographie et Langues. Parcours 100% orientés employabilité.
+      </p>
+
+      <!-- Liste à puces centrée -->
+      <ul class="list-unstyled hero-features d-inline-block text-start my-4">
+        <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Formations 100% pratiques</li>
+        <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Attestation / Certificat</li>
+        <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Horaires flexibles</li>
+      </ul>
+
+      <!-- Boutons d'action centrés -->
+      <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+        <a class="btn btn-lg rounded-pill hero-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdDOgPcwzcTWZU3-L2Gm-mkGVATqGwdwg8mcOBQMNSrLbioNg/viewform">S'inscrire maintenant <i class="bi bi-arrow-right ms-2"></i></a>
+        <a class="btn btn-outline-primary btn-lg rounded-pill text-white border-white" href="#formations">Découvrir les programmes</a>
+      </div>
+
+      <!-- Bloc de confiance / Avatars centré -->
+      <div class="hero-trust d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mt-3">
+        <div class="avatars">
+          <img src="assets/optimized/Image17.webp" alt="avatar1" class="avatar">
+          <img src="assets/optimized/Image18.webp" alt="avatar2" class="avatar">
+          <img src="assets/optimized/image19.webp" alt="avatar3" class="avatar">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</header>
+
+<main>
+<section id="about" class="about-section py-5 bg-white text-dark position-relative overflow-hidden " >
+  <div class="container position-relative" style="z-index: 2;">
+    
+    <!-- En-tête centré -->
+    <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+      <div class="d-inline-flex align-items-center gap-2 mb-2">
+        <span style="height: 1px; width: 30px; background-color: #0088FF;"></span>
+        <span class="badge rounded-pill fw-semibold px-3 py-2 text-uppercase" style="background-color: rgba(0, 136, 255, 0.1); color: #0088FF; border: 1px solid #0088FF; letter-spacing: 1px; font-size: 0.75rem;">
+          Depuis 2019 à vos côtés
+        </span>
+        <span style="height: 1px; width: 30px; background-color: #0088FF;"></span>
+      </div>
+      
+      <!-- Titre en bleu -->
+      <h2 class="display-5 fw-bold mb-3" style="color: #001C44;">Qui sommes-nous ?</h2>
+      
+      <!-- Textes en noir / sombre -->
+      <p class="lead fs-6 mb-2" style="color: #212529;">
+        <strong style="color: #001C44;">Fondé en 2019</strong> à Yaoundé (Entrée Perception Chateau), Béta Tech s'engage à démocratiser l'accès au numérique et aux langues. 
+        <em class="fst-italic" style="color: #495057;">Un centre qui donne le sourire naturel à tout le monde à travers l'informatique et les langues.</em>
+      </p>
+      
+      <p class="small mb-0" style="color: #6c757d;">
+        Formez-vous aujourd'hui pour réussir demain. Compétences utiles - Encadrement professionnel - Résultats concrets.
+      </p>
+    </div>
+
+    <!-- Grille des 3 cartes avec fond bleu et texte blanc -->
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Carte 1: Formations Pratiques -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-lg text-white" style="background-color: #001C44;">
+          <div class="position-relative" style="height: 180px;">
+            <img src="assets/image10.jpg" alt="Formations Pratiques" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="fw-bold mb-2 text-white">Formations Pratiques</h5>
+              <p class="small mb-0" style="color: rgba(255, 255, 255, 0.85);">Orientées marché pour des compétences immédiatement exploitables.</p>
+            </div>
+            <div class="mt-3 pt-2 w-25 mx-auto rounded" style="border-top: 3px solid #0088FF;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 2: Langues -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-lg text-white" style="background-color: #001C44;">
+          <div class="position-relative" style="height: 180px;">
+            <img src="assets/optimized/Image17.webp" alt="Langues" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="fw-bold mb-2 text-white">Langues</h5>
+              <p class="small mb-0" style="color: rgba(255, 255, 255, 0.85);">Double compétence pour une polyvalence garantie.</p>
+            </div>
+            <div class="mt-3 pt-2 w-25 mx-auto rounded" style="border-top: 3px solid #0088FF;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 3: Cadre Connecté -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-lg text-white" style="background-color: #001C44;">
+          <div class="position-relative" style="height: 180px;">
+            <img src="assets/image9.jpg" alt="Cadre Connecté" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="card-body p-4 text-center d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="fw-bold mb-2 text-white">Cadre Connecté</h5>
+              <p class="small mb-0" style="color: rgba(255, 255, 255, 0.85);">Cadre moderne avec Wi-Fi gratuit pour tous les apprenants.</p>
+            </div>
+            <div class="mt-3 pt-2 w-25 mx-auto rounded" style="border-top: 3px solid #0088FF;"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+</section>
+  <section id="formations" class="py-5 bg-light">
+  <div class="container">
+    
+    <!-- En-tête -->
+    <div class="text-center mb-5">
+      <span class="badge bg-primary-subtle text-primary fw-semibold text-uppercase px-3 py-2 rounded-pill mb-2">NOS FORMATIONS</span>
+      <h2 class="fw-bold display-6" style="color: #001C44;">Nos Modules de Formation</h2>
+      <p class="text-muted">Développez vos compétences avec nos programmes pratiques et certifiants.</p>
+    </div>
+
+    <!-- Grille des modules de formation -->
+    <div class="row g-4">
+
+      <!-- Module 1 : Bureautique -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-service-custom">
+          <div class="position-relative style-card-img" style="background-image: url('assets/bureautique.png');">
+            <div class="icon-badge">
+              <i class="bi bi-laptop"></i>
+            </div>
+          </div>
+          <div class="card-body text-center pt-5 pb-4 px-4 d-flex flex-column justify-content-between bg-white">
+            <div>
+              <h4 class="fw-bold mb-3" style="color: #001C44;">Bureautique</h4>
+              <p class="text-muted small">Maîtrise complète de la suite Office (Word, Excel, PowerPoint) et secrétariat numérique.</p>
+            </div>
+            <div class="mt-4">
+              <a href="#" class="btn btn-light-custom rounded-pill px-4 fw-semibold text-decoration-none">En savoir plus &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 2 : Infographie -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-service-custom">
+          <div class="position-relative style-card-img" style="background-image: url('assets/infographie.png');">
+            <div class="icon-badge">
+              <i class="bi bi-palette"></i>
+            </div>
+          </div>
+          <div class="card-body text-center pt-5 pb-4 px-4 d-flex flex-column justify-content-between bg-white">
+            <div>
+              <h4 class="fw-bold mb-3" style="color: #001C44;">Infographie</h4>
+              <p class="text-muted small">Création visuelle, conception graphique et maîtrise des outils de design numérique.</p>
+            </div>
+            <div class="mt-4">
+              <a href="#" class="btn btn-light-custom rounded-pill px-4 fw-semibold text-decoration-none">En savoir plus &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 3 : Maintenance Informatique -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-service-custom">
+          <div class="position-relative style-card-img" style="background-image: url('assets/Maintenance.jfif');">
+            <div class="icon-badge">
+              <i class="bi bi-tools"></i>
+            </div>
+          </div>
+          <div class="card-body text-center pt-5 pb-4 px-4 d-flex flex-column justify-content-between bg-white">
+            <div>
+              <h4 class="fw-bold mb-3" style="color: #001C44;">Maintenance Informatique</h4>
+              <p class="text-muted small">Diagnostic, réparation matérielle, assemblage, installation système et sécurité réseau.</p>
+            </div>
+            <div class="mt-4">
+              <a href="#" class="btn btn-light-custom rounded-pill px-4 fw-semibold text-decoration-none">En savoir plus &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 4 : Langue Anglaise -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-service-custom">
+          <div class="position-relative style-card-img" style="background-image: url('assets/Anglais.jfif');">
+            <div class="icon-badge">
+              <i class="bi bi-translate"></i>
+            </div>
+          </div>
+          <div class="card-body text-center pt-5 pb-4 px-4 d-flex flex-column justify-content-between bg-white">
+            <div>
+              <h4 class="fw-bold mb-3" style="color: #001C44;">Langue Anglaise</h4>
+              <p class="text-muted small">Anglais professionnel et général pour perfectionner votre communication à l'international.</p>
+            </div>
+            <div class="mt-4">
+              <a href="#" class="btn btn-light-custom rounded-pill px-4 fw-semibold text-decoration-none">En savoir plus &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 5 : Langue Française -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-service-custom">
+          <div class="position-relative style-card-img" style="background-image: url('assets/Francais.jfif');">
+            <div class="icon-badge">
+              <i class="bi bi-journal-text"></i>
+            </div>
+          </div>
+          <div class="card-body text-center pt-5 pb-4 px-4 d-flex flex-column justify-content-between bg-white">
+            <div>
+              <h4 class="fw-bold mb-3" style="color: #001C44;">Langue Française</h4>
+              <p class="text-muted small">Renforcement de la rédaction professionnelle, grammaire et expression orale/écrite.</p>
+            </div>
+            <div class="mt-4">
+              <a href="#" class="btn btn-light-custom rounded-pill px-4 fw-semibold text-decoration-none">En savoir plus &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module 6 : Analyse des données -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-service-custom">
+          <div class="position-relative style-card-img" style="background-image: url('assets/analyse de donnée.png');">
+            <div class="icon-badge">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+          </div>
+          <div class="card-body text-center pt-5 pb-4 px-4 d-flex flex-column justify-content-between bg-white">
+            <div>
+              <h4 class="fw-bold mb-3" style="color: #001C44;">Analyse des Données</h4>
+              <p class="text-muted small">Traitements statistiques, MS Project, Excel avancé et visualisation de données.</p>
+            </div>
+            <div class="mt-4">
+              <a href="#" class="btn btn-light-custom rounded-pill px-4 fw-semibold text-decoration-none">En savoir plus &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services-section py-5 text-white position-relative overflow-hidden" center/cover no-repeat;">
+  <div class="container position-relative" style="z-index: 2;">
+    
+    <!-- En-tête centré -->
+    <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+      <div class="d-inline-flex align-items-center gap-2 mb-2">
+        <span style="height: 1px; width: 30px; background-color:#001C44;"></span>
+        <span class="badge rounded-pill fw-semibold px-3 py-2 text-uppercase" style="background-color: #001C44; color: #ffffff; letter-spacing: 1px; font-size: 0.75rem;">
+          NOS SERVICES
+        </span>
+        <span style="height: 1px; width: 30px; background-color: #001C44;"></span>
+      </div>
+      
+      <h2 class="display-4 fw-bold mb-3 text-dark">Services</h2>
+      <p class="lead text-dark fs-6 mb-0">
+        Accompagnement, ateliers, coaching et prestations pour entreprises.
+      </p>
+    </div>
+
+    <!-- Grille des 3 Cartes -->
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Carte 1 : Accompagnement pédagogique -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-lg text-dark bg-white text-center">
+          <!-- Illustration / Image -->
+          <div class="position-relative" style="height: 200px;">
+            <img src="assets/image15.jpg" alt="Accompagnement pédagogique" class="w-100 h-100 object-fit-cover">
+            <!-- Vague décorative sous l'image -->
+            <div class="position-absolute bottom-0 start-0 end-0" style="height: 30px; background: white; clip-path: ellipse(60% 100% at 50% 100%);"></div>
+            <!-- Icône ronde au centre -->
+            <div class="position-absolute top-100 start-50 translate-middle rounded-circle bg-primary text-white d-flex align-items-center justify-content-center shadow" style="width: 55px; height: 55px; border: 3px solid white; background-color: #001C44 !important;">
+              <i class="bi bi-mortarboard-fill fs-4"></i>
+            </div>
+          </div>
+          
+          <!-- Contenu de la carte -->
+          <div class="card-body p-4 pt-5 d-flex flex-column justify-content-between">
+            <div class="mt-2">
+              <h5 class="fw-bold mb-2" style="color: #001C44;">Accompagnement pédagogique</h5>
+              <p class="small text-muted mb-4">
+                Conception de parcours, suivi individualisé et certification.
+              </p>
+            </div>
+            <div>
+              <a href="#" class="btn rounded-pill px-4 py-2 fw-semibold border-0 text-primary" style="background-color: #E6F3FF; color: #001C44 !important;">
+                En savoir plus &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 2 : Formations en entreprise -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-lg text-dark bg-white text-center">
+          <!-- Illustration / Image -->
+          <div class="position-relative" style="height: 200px;">
+            <img src="assets/image16.jpg" alt="Formations en entreprise" class="w-100 h-100 object-fit-cover">
+            <div class="position-absolute bottom-0 start-0 end-0" style="height: 30px; background: white; clip-path: ellipse(60% 100% at 50% 100%);"></div>
+            <!-- Icône ronde au centre -->
+            <div class="position-absolute top-100 start-50 translate-middle rounded-circle text-white d-flex align-items-center justify-content-center shadow" style="width: 55px; height: 55px; border: 3px solid white; background-color: #001C44;">
+              <i class="bi bi-pencil-square fs-4"></i>
+            </div>
+          </div>
+          
+          <!-- Contenu de la carte -->
+          <div class="card-body p-4 pt-5 d-flex flex-column justify-content-between">
+            <div class="mt-2">
+              <h5 class="fw-bold mb-2" style="color: #001C44;">Formations en entreprise</h5>
+              <p class="small text-muted mb-4">
+                Sessions sur site, intra-entreprise et formations sur mesure.
+              </p>
+            </div>
+            <div>
+              <a href="#" class="btn rounded-pill px-4 py-2 fw-semibold border-0" style="background-color: #E6F8F5; color: #001C44;">
+                En savoir plus &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 3 : Ateliers et événements -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-lg text-dark bg-white text-center">
+          <!-- Illustration / Image -->
+          <div class="position-relative" style="height: 200px;">
+            <img src="assets/image8.jpg" alt="Ateliers et événements" class="w-100 h-100 object-fit-cover">
+            <div class="position-absolute bottom-0 start-0 end-0" style="height: 30px; background: white; clip-path: ellipse(60% 100% at 50% 100%);"></div>
+            <!-- Icône ronde au centre -->
+            <div class="position-absolute top-100 start-50 translate-middle rounded-circle text-white d-flex align-items-center justify-content-center shadow" style="width: 55px; height: 55px; border: 3px solid white; background-color: #001C44;">
+              <i class="bi bi-people-fill fs-4"></i>
+            </div>
+          </div>
+          
+          <!-- Contenu de la carte -->
+          <div class="card-body p-4 pt-5 d-flex flex-column justify-content-between">
+            <div class="mt-2">
+              <h5 class="fw-bold mb-2" style="color: #001C44;">Ateliers et événements</h5>
+              <p class="small text-muted mb-4">
+                Camps intensifs, masterclass et journées portes ouvertes.
+              </p>
+            </div>
+            <div>
+              <a href="#" class="btn rounded-pill px-4 py-2 fw-semibold border-0" style="background-color: #F0EDFF; color: #001C44;">
+                En savoir plus &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="testimonials" class="py-5 bg-light overflow-hidden">
+  <div class="container mb-4">
+    <h2 class="text-center fw-bold" style="color: #001C44;">Témoignages</h2>
+  </div>
+
+  <!-- Conteneur du défilement infini vers la gauche -->
+  <div class="testimonial-ticker">
+    <div class="testimonial-track">
+      
+      <!-- Carte 1 -->
+      <div class="testimonial-card">
+        <div class="card border rounded-4 p-4 text-center h-100 shadow-sm bg-white">
+          <img src="assets/optimized/image2.webp" alt="A. Traoré" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
+          <p class="fst-italic text-muted small mb-3">"Excellente formation qui m'a permis de trouver un emploi rapidement."</p>
+          <h6 class="fw-bold mb-1" style="color: #001C44;">A. Traoré</h6>
+          <span class="small text-muted">Formateur Bureautique</span>
+        </div>
+      </div>
+
+      <!-- Carte 2 -->
+      <div class="testimonial-card">
+        <div class="card border rounded-4 p-4 text-center h-100 shadow-sm bg-white">
+          <img src="assets/optimized/Image17.webp" alt="S. Diallo" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
+          <p class="fst-italic text-muted small mb-3">"Formateurs compétents et soutien personnalisé tout au long du parcours."</p>
+          <h6 class="fw-bold mb-1" style="color: #001C44;">S. Diallo</h6>
+          <span class="small text-muted">Responsable Maintenance</span>
+        </div>
+      </div>
+
+      <!-- Carte 3 -->
+      <div class="testimonial-card">
+        <div class="card border rounded-4 p-4 text-center h-100 shadow-sm bg-white">
+          <img src="assets/optimized/Image18.webp" alt="M. Kaboré" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
+          <p class="fst-italic text-muted small mb-3">"Une expérience enrichissante en apprentissage des langues."</p>
+          <h6 class="fw-bold mb-1" style="color: #001C44;">M. Kaboré</h6>
+          <span class="small text-muted">Coordinatrice Langues</span>
+        </div>
+      </div>
+
+      <!-- Carte 4 -->
+      <div class="testimonial-card">
+        <div class="card border rounded-4 p-4 text-center h-100 shadow-sm bg-white">
+          <img src="assets/optimized/image19.webp" alt="K. N'Guessan" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
+          <p class="fst-italic text-muted small mb-3">"Le cadre est moderne et l'accueil est irréprochable."</p>
+          <h6 class="fw-bold mb-1" style="color: #001C44;">K. N'Guessan</h6>
+          <span class="small text-muted">Administration</span>
+        </div>
+      </div>
+
+      <!-- DUPLICATION POUR L'EFFET EN BOUCLE SANS FIN (Répéter les cartes) -->
+      <div class="testimonial-card">
+        <div class="card border rounded-4 p-4 text-center h-100 shadow-sm bg-white">
+          <img src="assets/optimized/image2.webp" alt="A. Traoré" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
+          <p class="fst-italic text-muted small mb-3">"Excellente formation qui m'a permis de trouver un emploi rapidement."</p>
+          <h6 class="fw-bold mb-1" style="color: #001C44;">A. Traoré</h6>
+          <span class="small text-muted">Formateur Bureautique</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="card border rounded-4 p-4 text-center h-100 shadow-sm bg-white">
+          <img src="assets/optimized/Image17.webp" alt="S. Diallo" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
+          <p class="fst-italic text-muted small mb-3">"Formateurs compétents et soutien personnalisé tout au long du parcours."</p>
+          <h6 class="fw-bold mb-1" style="color: #001C44;">S. Diallo</h6>
+          <span class="small text-muted">Responsable Maintenance</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="team" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Notre équipe</h2>
+      <p class="text-muted text-center">Formateurs et staff administratif engagés.</p>
+      <div class="row g-4 mt-3">
+        <div class="col-md-3">
+          <div class="card text-center p-3">
+            <img src="assets/optimized/Image17.webp" alt="Nom 1" class="rounded-circle mx-auto" style="width:120px;height:120px;object-fit:cover">
+            <div class="card-body">
+              <h6 class="card-title mb-0">Nom Prénom</h6>
+              <small class="text-muted">Formateur Bureautique</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center p-3">
+            <img src="assets/optimized/Image18.webp" alt="Nom 2" class="rounded-circle mx-auto" style="width:120px;height:120px;object-fit:cover">
+            <div class="card-body">
+              <h6 class="card-title mb-0">Nom Prénom</h6>
+              <small class="text-muted">Responsable Maintenance</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center p-3">
+            <img src="assets/optimized/image19.webp" alt="Nom 3" class="rounded-circle mx-auto" style="width:120px;height:120px;object-fit:cover">
+            <div class="card-body">
+              <h6 class="card-title mb-0">Nom Prénom</h6>
+              <small class="text-muted">Coordinatrice Langues</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center p-3">
+            <img src="assets/optimized/image20.webp" alt="Nom 4" class="rounded-circle mx-auto" style="width:120px;height:120px;object-fit:cover">
+            <div class="card-body">
+              <h6 class="card-title mb-0">Nom Prénom</h6>
+              <small class="text-muted">Administration</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4"><span class="text-primary">Galerie</span> <span class="text-accent">d'images</span></h2>
+
+      <div class="gallery-wrap mx-auto">
+        <div class="media-viewer rounded-3 shadow position-relative">
+          <button class="nav-btn prev" aria-label="Précédent">&lt;</button>
+          <img id="mainMedia" src="assets/optimized/image1.webp" alt="Galerie principale" />
+          <button class="nav-btn next" aria-label="Suivant">&gt;</button>
+        </div>
+
+        <div class="thumbs-bar mt-3 d-flex gap-2 align-items-center overflow-auto py-2">
+          <!-- vignettes injectées automatiquement -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planning" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Nos <span class="text-accent-or">Partenaires</span></h2>
+        <p class="text-muted">Nous collaborons avec</p>
+      </div>
+
+      <div class="partners-section">
+        <div class="partners-ribbon mx-auto shadow-sm">
+          <div class="partners-track" aria-hidden="true">
+            <div class="partners-slide d-flex align-items-center">
+              <div class="partner-item"><img src="assets/Partenaire1.jpg" alt="Partenaire 1"></div>
+              <div class="partner-item"><img src="assets/Partenaire2.jpg" alt="Partenaire 2"></div>
+              <div class="partner-item"><img src="assets/Partenaire3.jpg" alt="Partenaire 3"></div>
+              <div class="partner-item"><img src="assets/Partenaire4.jpg" alt="Partenaire 4"></div>
+              <div class="partner-item"><img src="assets/Partenaire5.jpg" alt="Partenaire 5"></div>
+            </div>
+
+            <!-- duplicate for seamless infinite scroll -->
+            <div class="partners-slide d-flex align-items-center">
+              <div class="partner-item"><img src="assets/Partenaire1.jpg" alt="Partenaire 1"></div>
+              <div class="partner-item"><img src="assets/Partenaire2.jpg" alt="Partenaire 2"></div>
+              <div class="partner-item"><img src="assets/Partenaire3.jpg" alt="Partenaire 3"></div>
+              <div class="partner-item"><img src="assets/Partenaire4.jpg" alt="Partenaire 4"></div>
+              <div class="partner-item"><img src="assets/Partenaire5.jpg" alt="Partenaire 5"></div>
+            </div>
+
+             <div class="partners-slide d-flex align-items-center">
+              <div class="partner-item"><img src="assets/Partenaire1.jpg" alt="Partenaire 1"></div>
+              <div class="partner-item"><img src="assets/Partenaire2.jpg" alt="Partenaire 2"></div>
+              <div class="partner-item"><img src="assets/Partenaire3.jpg" alt="Partenaire 3"></div>
+              <div class="partner-item"><img src="assets/Partenaire4.jpg" alt="Partenaire 4"></div>
+              <div class="partner-item"><img src="assets/Partenaire5.jpg" alt="Partenaire 5"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4 text-body">Contact</h2>
+          <!-- Contact form integrated with Formspree. Replace YOUR_FORMSPREE_ID with your form ID -->
+          <form id="contactForm" class="row g-3" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                <div id="contactFeedback" class="alert d-none" role="alert"></div>
+
+                <div class="col-md-6">
+                  <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Votre prénom" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Votre nom" required>
+                </div>
+
+                <div class="col-12">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Votre adresse email" required>
+                </div>
+
+                <div class="col-12">
+                  <input type="text" name="subject" id="subject" class="form-control" placeholder="Objet" required>
+                </div>
+
+                <div class="col-12">
+                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Votre message..." required></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <button type="submit" class="send btn btn-info">Envoyer</button>
+                </div>
+              </form>
+        </div>
+      </section>
+  
+</main>
+
+<footer class="site-footer py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Column 1: About -->
+      <div class="col-12 col-md-4 col-lg-3">
+        <a class="d-inline-flex align-items-center mb-3" href="#">
+          <img src="assets/optimized/logo.jpg" alt="Béta Tech" style="width:56px;height:56px;object-fit:cover;border-radius:8px;margin-right:12px">
+          <span class="h5 mb-0" style="color:var(--primary);font-weight:800">Béta Tech</span>
+        </a>
+        <p class="small text-muted">Centre de formation et d'accompagnement numérique à Yaoundé : formations pratiques et certifiantes.</p>
+
+        <div class="mt-3 d-flex gap-2">
+          <a class="social-btn" href="https://www.facebook.com/profile.php?id=100076288624469" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a class="social-btn" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a class="social-btn" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <h6 class="footer-title">Liens Rapides</h6>
+        <ul class="list-unstyled footer-links mb-0">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#formations">Nos Formations</a></li>
+          <li><a href="#services">Nos Services</a></li>
+          <li><a href="#testimonials">Témoignages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Services -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <h6 class="footer-title">Nos Services</h6>
+        <ul class="list-unstyled footer-links mb-0">
+          <li><a href="#accompagnement">Accompagnement pédagogique</a></li>
+          <li><a href="#formations-entreprise">Formations en entreprise</a></li>
+          <li><a href="#ateliers">Ateliers & événements</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact -->
+      <div class="col-12 col-md-12 col-lg-3">
+        <h6 class="footer-title">Contact</h6>
+        <ul class="list-unstyled mb-0 contact-list">
+          <li class="mb-2"><i class="bi bi-geo-alt-fill me-2" style="color:var(--primary)"></i> <a href="https://maps.app.goo.gl/fLmXYeYStGHWv54XA?g_st=awb" target="_blank" rel="noopener noreferrer">Yaoundé,Entrée Perception Chateau</a></li>
+          <li class="mb-2"><i class="bi bi-telephone-fill me-2" style="color:var(--primary)"></i> +237 6 55 14 71 03</li>
+          <li><i class="bi bi-envelope-fill me-2" style="color:var(--primary)"></i> info@beta-tech.cm</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Small dark copyright bar (as in capture 1) -->
+<div class="footer-bar">
+  <div class="container d-flex justify-content-between align-items-center py-3">
+    <div class="text-white">
+       &nbsp; © <span id="year2">2026</span> Béta Tech by Alhafi Koïbour. Tous droits réservés.
+    </div>
+    <div>
+      <a href="#" class="footer-bar-link me-3">Mentions légales</a>
+      <a href="#" class="footer-bar-link">Confidentialité</a>
+    </div>
+  </div>
+</div>
+
+<button id="whatsappBtn" class="btn whatsapp-btn" title="Contactez-nous sur WhatsApp" data-url="https://wa.me/message/BAL25KHOA3CYO1" aria-label="Contact WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M20.52 3.48A11.91 11.91 0 0012 0C5.373 0 .01 5.373 0 12c0 2.117.557 4.184 1.62 6.035L0 24l6.243-1.596A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.212-3.48-8.52z" fill="#25D366"/>
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.672.15-.198.297-.768.966-.942 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.173.201-.297.301-.495.099-.198.05-.371-.025-.52-.075-.149-.672-1.618-.922-2.214-.242-.581-.487-.502-.672-.512l-.573-.01c-.198 0-.52.074-.793.371s-1.04 1.016-1.04 2.479 1.064 2.876 1.213 3.074c.149.198 2.096 3.2 5.076 4.487  .71.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.123-.272-.198-.57-.347z" fill="#fff"/>
+  </svg>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Swiper JS removed: static grid used for formations -->
+<script src="js/gallery.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Media Lightbox Modal -->
+<div class="modal fade" id="mediaModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content bg-dark">
+      <div class="modal-body d-flex align-items-center justify-content-center p-0 position-relative">
+        <button class="btn btn-link text-white position-absolute top-0 start-0 m-3" data-bs-dismiss="modal">&times;</button>
+        <button id="prevMedia" class="btn btn-link text-white position-absolute top-50 start-0 translate-middle-y ms-2">&#10094;</button>
+        <img id="mediaModalImg" src="" alt="" class="img-fluid" style="max-height:90vh;">
+        <button id="nextMedia" class="btn btn-link text-white position-absolute top-50 end-0 translate-middle-y me-2">&#10095;</button>
+      </div>
+      <div class="modal-footer text-white">
+        <div id="mediaCaption" class="me-auto"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Confirmation Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Pré-inscription envoyée</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Merci ! Votre demande a été enregistrée. Nous vous contacterons bientôt pour confirmer votre inscription.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
