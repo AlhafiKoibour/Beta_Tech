@@ -299,8 +299,8 @@
   </div>
 </section>
 
-<section id="services" class="services-section py-5 text-white position-relative overflow-hidden" center/cover no-repeat;">
-  <div class="container position-relative" style="z-index: 2;">
+<section id="services" class="services-section py-5 text-white position-relative overflow-hidden bg-transparent">
+  <div class="container-fluid px-lg-5 position-relative" style="z-index: 2;">
     
     <!-- En-tête centré -->
     <div class="text-center mx-auto mb-5" style="max-width: 800px;">
@@ -318,24 +318,19 @@
       </p>
     </div>
 
-    <!-- Grille des 3 Cartes -->
+    <!-- Grille des 4 Cartes (3 colonnes bootstrap sur desktop: col-lg-3) -->
     <div class="row g-4 justify-content-center">
       
       <!-- Carte 1 : Accompagnement pédagogique -->
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-6 col-lg-3">
         <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-lg text-dark bg-white text-center">
-          <!-- Illustration / Image -->
           <div class="position-relative" style="height: 200px;">
             <img src="assets/image15.jpg" alt="Accompagnement pédagogique" class="w-100 h-100 object-fit-cover">
-            <!-- Vague décorative sous l'image -->
             <div class="position-absolute bottom-0 start-0 end-0" style="height: 30px; background: white; clip-path: ellipse(60% 100% at 50% 100%);"></div>
-            <!-- Icône ronde au centre -->
-            <div class="position-absolute top-100 start-50 translate-middle rounded-circle bg-primary text-white d-flex align-items-center justify-content-center shadow" style="width: 55px; height: 55px; border: 3px solid white; background-color: #001C44 !important;">
+            <div class="position-absolute top-100 start-50 translate-middle rounded-circle text-white d-flex align-items-center justify-content-center shadow" style="width: 55px; height: 55px; border: 3px solid white; background-color: #001C44 !important;">
               <i class="bi bi-mortarboard-fill fs-4"></i>
             </div>
           </div>
-          
-          <!-- Contenu de la carte -->
           <div class="card-body p-4 pt-5 d-flex flex-column justify-content-between">
             <div class="mt-2">
               <h5 class="fw-bold mb-2" style="color: #001C44;">Accompagnement pédagogique</h5>
@@ -344,7 +339,7 @@
               </p>
             </div>
             <div>
-              <a href="#" class="btn rounded-pill px-4 py-2 fw-semibold border-0 text-primary" style="background-color: #E6F3FF; color: #001C44 !important;">
+              <a href="#" class="btn rounded-pill px-4 py-2 fw-semibold border-0" style="background-color: #E6F3FF; color: #001C44 !important;">
                 En savoir plus &rarr;
               </a>
             </div>
@@ -353,19 +348,15 @@
       </div>
 
       <!-- Carte 2 : Formations en entreprise -->
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-6 col-lg-3">
         <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-lg text-dark bg-white text-center">
-          <!-- Illustration / Image -->
           <div class="position-relative" style="height: 200px;">
             <img src="assets/image16.jpg" alt="Formations en entreprise" class="w-100 h-100 object-fit-cover">
             <div class="position-absolute bottom-0 start-0 end-0" style="height: 30px; background: white; clip-path: ellipse(60% 100% at 50% 100%);"></div>
-            <!-- Icône ronde au centre -->
             <div class="position-absolute top-100 start-50 translate-middle rounded-circle text-white d-flex align-items-center justify-content-center shadow" style="width: 55px; height: 55px; border: 3px solid white; background-color: #001C44;">
               <i class="bi bi-pencil-square fs-4"></i>
             </div>
           </div>
-          
-          <!-- Contenu de la carte -->
           <div class="card-body p-4 pt-5 d-flex flex-column justify-content-between">
             <div class="mt-2">
               <h5 class="fw-bold mb-2" style="color: #001C44;">Formations en entreprise</h5>
@@ -383,19 +374,15 @@
       </div>
 
       <!-- Carte 3 : Ateliers et événements -->
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-6 col-lg-3">
         <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-lg text-dark bg-white text-center">
-          <!-- Illustration / Image -->
           <div class="position-relative" style="height: 200px;">
             <img src="assets/image8.jpg" alt="Ateliers et événements" class="w-100 h-100 object-fit-cover">
             <div class="position-absolute bottom-0 start-0 end-0" style="height: 30px; background: white; clip-path: ellipse(60% 100% at 50% 100%);"></div>
-            <!-- Icône ronde au centre -->
             <div class="position-absolute top-100 start-50 translate-middle rounded-circle text-white d-flex align-items-center justify-content-center shadow" style="width: 55px; height: 55px; border: 3px solid white; background-color: #001C44;">
               <i class="bi bi-people-fill fs-4"></i>
             </div>
           </div>
-          
-          <!-- Contenu de la carte -->
           <div class="card-body p-4 pt-5 d-flex flex-column justify-content-between">
             <div class="mt-2">
               <h5 class="fw-bold mb-2" style="color: #001C44;">Ateliers et événements</h5>
@@ -412,10 +399,38 @@
         </div>
       </div>
 
+      <!-- Carte 4 : BETA-TRANS (Intégrée en 4ème colonne) -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 border-0 rounded-4 overflow-hidden shadow-lg text-dark bg-white text-center">
+          <div class="position-relative" style="height: 200px;">
+            <img src="assets/beta_trans.jfif" alt="BETA-TRANS Taxi & Transport" class="w-100 h-100 object-fit-cover">
+            <div class="position-absolute bottom-0 start-0 end-0" style="height: 30px; background: white; clip-path: ellipse(60% 100% at 50% 100%);"></div>
+            <div class="position-absolute top-100 start-50 translate-middle rounded-circle text-white d-flex align-items-center justify-content-center shadow" style="width: 55px; height: 55px; border: 3px solid white; background-color: #001C44;">
+              <i class="bi bi-taxi-front-fill fs-4"></i>
+            </div>
+          </div>
+          <div class="card-body p-4 pt-5 d-flex flex-column justify-content-between">
+            <div class="mt-2">
+              <h5 class="fw-bold mb-2" style="color: #001C44;">BETA-TRANS</h5>
+              <p class="small text-muted mb-4">
+                Transports privés, transferts aéroport et livraison de colis en toute sécurité.
+              </p>
+            </div>
+            <div>
+              <button type="button" class="btn rounded-pill px-4 py-2 fw-semibold border-0" style="background-color: #FFF3E0; color: #001C44;" data-bs-toggle="modal" data-bs-target="#betaTransModal">
+                En savoir plus &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
 </section>
+
+
 
 <section id="testimonials" class="py-5 bg-light overflow-hidden">
   <div class="container mb-4">
@@ -429,40 +444,40 @@
       <!-- Carte 1 -->
       <div class="testimonial-card">
         <div class="card border rounded-4 p-4 text-center h-100 shadow-sm bg-white">
-          <img src="assets/optimized/image2.webp" alt="A. Traoré" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
-          <p class="fst-italic text-muted small mb-3">"Excellente formation qui m'a permis de trouver un emploi rapidement."</p>
-          <h6 class="fw-bold mb-1" style="color: #001C44;">A. Traoré</h6>
-          <span class="small text-muted">Formateur Bureautique</span>
+          <img src="assets/ketsia.jpg" alt="A. Traoré" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
+          <p class="fst-italic text-muted small mb-3">"Grâce à la formation en bureautique, j'ai développé une maîtrise solide de Word, Excel et PowerPoint. Un apprentissage très pratique qui a renforcé mon autonomie. Au-delà des compétences en informatique, ce que je retiens, c'est l'aventure humaine. On arrive pour apprendre la technologie, on repart avec une famille."</p>
+          <h6 class="fw-bold mb-1" style="color: #001C44;">Ketsia</h6>
+          <span class="small text-muted">Apprenante en Informatique Bureautique</span>
         </div>
       </div>
 
       <!-- Carte 2 -->
       <div class="testimonial-card">
         <div class="card border rounded-4 p-4 text-center h-100 shadow-sm bg-white">
-          <img src="assets/optimized/Image17.webp" alt="S. Diallo" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
-          <p class="fst-italic text-muted small mb-3">"Formateurs compétents et soutien personnalisé tout au long du parcours."</p>
-          <h6 class="fw-bold mb-1" style="color: #001C44;">S. Diallo</h6>
-          <span class="small text-muted">Responsable Maintenance</span>
+          <img src="assets/Nérémadji_Rosine.jpg" alt="S. Diallo" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
+          <p class="fst-italic text-muted small mb-3">"Un apprentissage concret et très bien structuré ! Je réalise désormais mes rapports et présentations avec efficacité et confiance."</p>
+          <h6 class="fw-bold mb-1" style="color: #001C44;">Neremadji Rosine</h6>
+          <span class="small text-muted">Apprenant en Informatique Bureautique</span>
         </div>
       </div>
 
       <!-- Carte 3 -->
       <div class="testimonial-card">
         <div class="card border rounded-4 p-4 text-center h-100 shadow-sm bg-white">
-          <img src="assets/optimized/Image18.webp" alt="M. Kaboré" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
-          <p class="fst-italic text-muted small mb-3">"Une expérience enrichissante en apprentissage des langues."</p>
-          <h6 class="fw-bold mb-1" style="color: #001C44;">M. Kaboré</h6>
-          <span class="small text-muted">Coordinatrice Langues</span>
+          <img src="assets/Beufoutcham_Sinyabé_Arnaud.jpeg" alt="M. Kaboré" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
+          <p class="fst-italic text-muted small mb-3">"Ce que j’ai particulièrement apprécié à Bêta-Tech, c’est l’importance accordée à la pratique. On ne se contente pas d’apprendre des notions : on les met réellement en application. Cela m’a permis de progresser, de prendre confiance et surtout de développer une véritable passion pour l’informatique et la création numérique.Avec le temps, mon parcours a évolué et j’ai eu l’opportunité de revenir à Bêta-Tech, cette fois comme formateur. Passer de celui qui apprend à celui qui transmet a été une expérience importante pour moi."</p>
+          <h6 class="fw-bold mb-1" style="color: #001C44;">Beufoutcham Sinyabé Arnaud</h6>
+          <span class="small text-muted">Ancien apprenant et formateur à Bêta-Tech</span>
         </div>
       </div>
 
       <!-- Carte 4 -->
       <div class="testimonial-card">
         <div class="card border rounded-4 p-4 text-center h-100 shadow-sm bg-white">
-          <img src="assets/optimized/image19.webp" alt="K. N'Guessan" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
-          <p class="fst-italic text-muted small mb-3">"Le cadre est moderne et l'accueil est irréprochable."</p>
-          <h6 class="fw-bold mb-1" style="color: #001C44;">K. N'Guessan</h6>
-          <span class="small text-muted">Administration</span>
+          <img src="assets/Ndebel Opportune.jpeg" alt="K. N'Guessan" class="rounded-circle mx-auto mb-3 object-fit-cover" style="width: 100px; height: 100px;">
+          <p class="fst-italic text-muted small mb-3">"J’ai beaucoup appris et cette formation m’a permis d’améliorer mes connaissances en informatique et de gagner davantage en confiance. Je remercie également le PGG qui veille à ce que ses étudiants soient à l’aise pendant leur formation et qu’ils repartent avec de nouvelles connaissances et quelque chose de concret en tête,merci aux formateurs pour leur patience, leur disponibilité et leur accompagnement. Je suis très satisfaite d’avoir vécu cette belle expérience."</p>
+          <h6 class="fw-bold mb-1" style="color: #001C44;">Ndebel Opportune</h6>
+          <span class="small text-muted">Apprenante en Informatique Bureautique</span>
         </div>
       </div>
 
@@ -641,8 +656,9 @@
 
         <div class="mt-3 d-flex gap-2">
           <a class="social-btn" href="https://www.facebook.com/profile.php?id=100076288624469" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a class="social-btn" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a class="social-btn" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a class="social-btn" href="https://www.linkedin.com/company/b%C3%AAta-tech/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a class="social-btn" href="https://www.instagram.com/betatech55091?stkn=anI5Y2g1ZTEwMmw4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a class="social-btn" href="https://youtube.com/@beta-tech-x4x?si=Cnl0FDSvtGvLx5-B" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
 
@@ -675,7 +691,7 @@
         <ul class="list-unstyled mb-0 contact-list">
           <li class="mb-2"><i class="bi bi-geo-alt-fill me-2" style="color:var(--primary)"></i> <a href="https://maps.app.goo.gl/fLmXYeYStGHWv54XA?g_st=awb" target="_blank" rel="noopener noreferrer">Yaoundé,Entrée Perception Chateau</a></li>
           <li class="mb-2"><i class="bi bi-telephone-fill me-2" style="color:var(--primary)"></i> +237 6 55 14 71 03</li>
-          <li><i class="bi bi-envelope-fill me-2" style="color:var(--primary)"></i> info@beta-tech.cm</li>
+          <li><i class="bi bi-envelope-fill me-2" style="color:var(--primary)"></i> betatechcam01@gmail.com</li>
         </ul>
       </div>
     </div>
@@ -738,6 +754,134 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Détails BETA-TRANS -->
+<div class="modal fade" id="betaTransModal" tabindex="-1" aria-labelledby="betaTransModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content rounded-4 border-0 overflow-hidden" style="background-color: #001C44;">
+      
+      <!-- Modal Header -->
+      <div class="modal-header border-0 text-white p-4 pb-0">
+        <div>
+          <span class="badge bg-white text-dark px-3 py-2 rounded-pill fw-bold text-uppercase mb-2">
+            <i class="bi me-1"></i> Service Premium 24H/24 - 7J/7
+          </span>
+          <h3 class="modal-title h3 fw-bold text-white" id="betaTransModalLabel">BETA-TRANS</h3>
+          <p class="text-white mb-0 fw-semibold">Plus qu'un taxi, une expérience de confiance</p>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body p-4 text-white">
+        <p class="text-white-50 mb-4">
+          BETA-TRANS vous accompagne au quotidien pour tous vos déplacements en ville et au-delà, en toute sécurité, avec confort et professionnalisme.
+        </p>
+
+        <div class="row g-4">
+          <!-- Nos Services -->
+          <div class="col-12 col-md-6">
+            <div class="p-3 rounded-3" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1);">
+              <h4 class="h5 text-white mb-3 pb-2 border-bottom border-white">Nos Services</h4>
+              
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-geo-alt-fill text-white fs-5 me-3"></i>
+                <div>
+                  <strong class="d-block text-white">Trajets en Ville</strong>
+                  <small class="text-white-50">Rapides, sûrs et confortables.</small>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-airplane-engines-fill text-white fs-5 me-3"></i>
+                <div>
+                  <strong class="d-block text-white">Transferts Aéroport</strong>
+                  <small class="text-white-50">Ponctualité garantie.</small>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-clock-history text-white fs-5 me-3"></i>
+                <div>
+                  <strong class="d-block text-white">Mise à Disposition</strong>
+                  <small class="text-white-50">À l'heure, à la journée ou sur mesure.</small>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-people-fill text-white fs-5 me-3"></i>
+                <div>
+                  <strong class="d-block text-white">Transport de Groupe</strong>
+                  <small class="text-white-50">Voyagez ensemble en toute sérénité.</small>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start">
+                <i class="bi bi-box-seam-fill text-white fs-5 me-3"></i>
+                <div>
+                  <strong class="d-block text-white">Livraison de Colis</strong>
+                  <small class="text-white-50">Fiable et express.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engagements -->
+          <div class="col-12 col-md-6">
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <div class="p-2 text-center rounded-3 h-100" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1);">
+                  <i class="bi bi-shield-check text-white fs-3"></i>
+                  <div class="fw-bold small text-white mt-1">Sécurité Garantie</div>
+                  <small class="text-white-50 d-block" style="font-size:0.75rem;">Chauffeurs qualifiés & véhicules contrôlés</small>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-2 text-center rounded-3 h-100" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1);">
+                  <i class="bi bi-person-badge text-white fs-3"></i>
+                  <div class="fw-bold small text-white mt-1">Chauffeurs Pros</div>
+                  <small class="text-white-50 d-block" style="font-size:0.75rem;">Courtois, discrets & expérimentés</small>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-2 text-center rounded-3 h-100" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1);">
+                  <i class="bi bi-hand-thumbs-up text-white fs-3"></i>
+                  <div class="fw-bold small text-white mt-1">Confort Assuré</div>
+                  <small class="text-white-50 d-block" style="font-size:0.75rem;">Véhicules propres, climatisés & récents</small>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-2 text-center rounded-3 h-100" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1);">
+                  <i class="bi bi-alarm text-white fs-3"></i>
+                  <div class="fw-bold small text-white mt-1">Ponctualité</div>
+                  <small class="text-white-50 d-block" style="font-size:0.75rem;">Nous arrivons à l'heure, à chaque fois</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bloc Contact Direct -->
+            <div class="p-3 rounded-3 bg-white text-dark text-center">
+              <strong class="d-block mb-1">RÉSERVEZ MAINTENANT !</strong>
+              <small class="d-block mb-2">Service simple, rapide et disponible à tout moment.</small>
+              <a href="tel:655147103" class="btn btn-dark btn-sm rounded-pill px-3 fw-bold">
+                <i class="bi bi-telephone-fill me-1"></i> 655 147 103
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer border-0 p-3 bg-dark bg-opacity-25 justify-content-between">
+        <button type="button" class="btn btn-outline-light btn-sm rounded-pill" data-bs-dismiss="modal">Fermer</button>
+      </div>
+
     </div>
   </div>
 </div>
