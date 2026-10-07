@@ -8,7 +8,7 @@
 .gallery-wrap{max-width:1100px;margin:0 auto;padding:1rem;border-radius:28px;background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(232,241,255,.88));box-shadow:0 18px 45px rgba(0, 28, 68, .08);border:1px solid rgba(0, 28, 68, .06)}
 
 .media-viewer{background:linear-gradient(135deg, #eef6ff 0%, #ffffff 100%);display:flex;align-items:center;justify-content:center;height:520px;max-height:70vh;position:relative;overflow:hidden;border-radius:20px;border:1px solid rgba(0,28,68,0.08);box-shadow:inset 0 0 0 1px rgba(0,28,68,.03)}
-.media-viewer img{width:auto;max-width:100%;height:100%;max-height:100%;object-fit:contain;object-position:center center;display:block;opacity:1;transition:opacity .35s ease}
+.media-viewer img{width:100%;height:100%;object-fit:contain;object-position:center center;display:block;opacity:1;transition:opacity .35s ease;background:#f7f9fc}
 
 .nav-btn{position:absolute;top:50%;transform:translateY(-50%);width:56px;height:56px;border-radius:999px;border:none;background:rgba(0,136,255,.9);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.18);cursor:pointer;z-index:2;opacity:0.96;transition:transform .2s ease, background .2s ease}
 .nav-btn:hover{background:var(--accent);transform:translateY(-50%) scale(1.04)}
@@ -16,7 +16,7 @@
 .nav-btn.next{right:16px}
 .nav-btn:active{transform:translateY(-50%) scale(.97)}
 
-.thumbs-bar{display:flex;gap:12px;overflow-x:auto;padding:12px 6px 6px;-webkit-overflow-scrolling:touch}
+.thumbs-bar{display:flex;gap:12px;overflow-x:auto;padding:12px 6px 6px;-webkit-overflow-scrolling:touch;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none}
 .thumbs-bar img{width:92px;height:72px;border-radius:12px;object-fit:cover;flex:0 0 auto;border:3px solid transparent;opacity:.72;transition:all .25s ease;cursor:pointer;box-shadow:0 8px 18px rgba(14, 34, 74, .08)}
 .thumbs-bar img.active{border-color:var(--accent);opacity:1;transform:translateY(-6px);box-shadow:0 12px 24px rgba(0,136,255,.15)}
 
@@ -28,6 +28,6 @@
   .nav-btn{width:44px;height:44px}
 }
 
-.thumbs-bar::-webkit-scrollbar{height:8px}
-.thumbs-bar::-webkit-scrollbar-thumb{background:rgba(0,0,0,.12);border-radius:8px}
-.thumbs-bar::-webkit-scrollbar-track{background:rgba(0,0,0,.02)}
+.thumbs-bar::-webkit-scrollbar{display:none;height:0;width:0}
+.thumbs-bar::-webkit-scrollbar-thumb{display:none}
+.thumbs-bar::-webkit-scrollbar-track{display:none}

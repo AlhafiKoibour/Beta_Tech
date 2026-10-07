@@ -7,13 +7,6 @@
     "caption": "analyse de donnée"
   },
   {
-    "id": "bureautique",
-    "full": "assets/optimized/bureautique.webp",
-    "thumb": "assets/thumbs/bureautique.webp",
-    "category": "bureautique",
-    "caption": "bureautique"
-  },
-  {
     "id": "image1",
     "full": "assets/optimized/image1.webp",
     "thumb": "assets/thumbs/image1.webp",
@@ -189,10 +182,10 @@
     "caption": "image9"
   },
   {
-    "id": "infographie",
-    "full": "assets/optimized/infographie.webp",
-    "thumb": "assets/thumbs/infographie.webp",
+    "id": "image8",
+    "full": "assets/optimized/image8.webp",
+    "thumb": "assets/thumbs/image8.webp",
     "category": "autres",
-    "caption": "infographie"
+    "caption": "image8"
   }
 ]
