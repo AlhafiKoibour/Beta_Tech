@@ -77,10 +77,12 @@
   function renderThumbs(){
     if (!thumbsBar) return;
     thumbsBar.innerHTML = '';
-    images.forEach((src, i) => {
+    images.forEach((image, i) => {
       const t = document.createElement('img');
-      t.src = src;
+      t.src = image.thumb;
       t.alt = `Photo ${i + 1}`;
+      t.loading = 'lazy';
+      t.decoding = 'async';
       t.dataset.index = i;
       if (i === 0) t.classList.add('active');
       t.addEventListener('click', () => { goTo(i); pauseAutoplay(); });
@@ -91,7 +93,7 @@
   function goTo(i){
     if (!images.length) return;
     index = (i + images.length) % images.length;
-    setMain(images[index]);
+    setMain(images[index].full);
     updateActiveThumb();
   }
 
@@ -123,9 +125,12 @@
       if (!Array.isArray(items) || !items.length) throw new Error('Manifest vide');
 
       const valid = items
-        .map(item => (item.full || item.src || ''))
-        .filter(Boolean)
-        .map(src => encodeURI(src));
+        .map(item => {
+          const full = item.full || item.src || '';
+          const thumb = item.thumb || full;
+          return full ? { full: encodeURI(full), thumb: encodeURI(thumb) } : null;
+        })
+        .filter(Boolean);
 
       if (valid.length) {
         images = valid;
@@ -135,7 +140,7 @@
       console.warn('Chargement du JSON gallery échoué, utilisation du fallback :', error);
     }
 
-    images = fallbackImages;
+    images = fallbackImages.map(src => ({ full: src, thumb: src }));
   }
 
   async function init(){
@@ -156,7 +161,7 @@
       if (e.key === 'ArrowRight') next();
     });
 
-    setMain(images[0]);
+    setMain(images[0].full);
     updateActiveThumb();
     startAutoplay();
   }
