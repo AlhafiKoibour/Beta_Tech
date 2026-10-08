@@ -653,31 +653,36 @@
     <section id="contact" class="py-5 bg-light">
         <div class="container">
           <h2 class="text-center mb-4 text-body">Contact</h2>
-          <!-- Remplacez votre-form-id par votre vrai ID Formspree pour un envoi direct sans client mail. -->
-          <form id="contactForm" class="row g-3" action="https://formspree.io/f/mvkzkvqe" method="POST" data-formspree-id="mvkzkvqe">
-                <div id="contactFeedback" class="alert d-none" role="alert"></div>
+          <div class="alert alert-success" data-fs-success role="status">Merci, votre message a bien été envoyé.</div>
+          <div class="alert alert-danger" data-fs-error role="alert"></div>
+          <form id="contactForm" class="row g-3" action="https://formspree.io/f/mvkzkvqe" method="POST">
 
                 <div class="col-md-6">
-                  <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Votre prénom" required>
+                  <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Votre prénom" data-fs-field required>
+                  <span data-fs-error="first_name"></span>
                 </div>
                 <div class="col-md-6">
-                  <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Votre nom" required>
+                  <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Votre nom" data-fs-field required>
+                  <span data-fs-error="last_name"></span>
                 </div>
 
                 <div class="col-12">
-                  <input type="email" name="email" id="email" class="form-control" placeholder="Votre adresse email" required>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Votre adresse email" data-fs-field required>
+                  <span data-fs-error="email"></span>
                 </div>
 
                 <div class="col-12">
-                  <input type="text" name="subject" id="subject" class="form-control" placeholder="Objet" required>
+                  <input type="text" name="subject" id="subject" class="form-control" placeholder="Objet" data-fs-field required>
+                  <span data-fs-error="subject"></span>
                 </div>
 
                 <div class="col-12">
-                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Votre message..." required></textarea>
+                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Votre message..." data-fs-field required></textarea>
+                  <span data-fs-error="message"></span>
                 </div>
 
                 <div class="col-12 text-center">
-                  <button type="submit" class="send btn btn-info">Envoyer</button>
+                  <button type="submit" class="send btn btn-info" data-fs-submit-btn>Envoyer</button>
                 </div>
               </form>
         </div>
@@ -927,6 +932,16 @@
     </div>
   </div>
 </div>
+
+<script>
+  window.formspree =
+    window.formspree ||
+    function () {
+      (formspree.q = formspree.q || []).push(arguments);
+    };
+  formspree('initForm', { formElement: '#contactForm', formId: 'mvkzkvqe' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
 </body>
 </html>

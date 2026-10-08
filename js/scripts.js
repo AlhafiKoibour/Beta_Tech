@@ -48,66 +48,6 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   });
 
-  const contactForm = document.getElementById('contactForm');
-  if(contactForm){
-    const feedback = document.getElementById('contactFeedback');
-    const formspreeId = contactForm.dataset.formspreeId || '';
-
-    contactForm.addEventListener('submit', async (event) => {
-      event.preventDefault();
-
-      const formData = new FormData(contactForm);
-      const firstName = (formData.get('first_name') || '').trim();
-      const lastName = (formData.get('last_name') || '').trim();
-      const email = (formData.get('email') || '').trim();
-      const subject = (formData.get('subject') || '').trim();
-      const message = (formData.get('message') || '').trim();
-
-      const body = [
-        'Prénom: ' + firstName,
-        'Nom: ' + lastName,
-        'Email: ' + email,
-        '',
-        'Objet: ' + subject,
-        '',
-        'Message:',
-        message
-      ].join('\n');
-
-      const mailtoUrl = `mailto:betatechcam01@gmail.com?subject=${encodeURIComponent(subject || 'Demande de contact')}&body=${encodeURIComponent(body)}`;
-
-      if (formspreeId) {
-        try {
-          const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
-            method: 'POST',
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-          });
-
-          if (response.ok) {
-            if (feedback) {
-              feedback.className = 'alert alert-success';
-              feedback.textContent = 'Votre message a bien été envoyé.';
-              feedback.classList.remove('d-none');
-            }
-            contactForm.reset();
-            return;
-          }
-        } catch (error) {
-          console.warn('Formspree indisponible, bascule sur mailto.', error);
-        }
-      }
-
-      window.location.href = mailtoUrl;
-      if (feedback) {
-        feedback.className = 'alert alert-success';
-        feedback.textContent = 'Votre client de messagerie va s’ouvrir pour finaliser l’envoi.';
-        feedback.classList.remove('d-none');
-      }
-      contactForm.reset();
-    });
-  }
-
   // Simple form validation / disabled submit until valid
   const form = document.getElementById('preinscription');
   if(form){
